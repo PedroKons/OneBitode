@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calcudor de Gorjetas</title> <!-- Nome da Aba  -->
+</head>
+    <div class="dev">
+        <p>Desenvolvido por: Pedro H K Goncalves</p>
+    </div>
+<body>
+    <div id="container">
+      <div>
+        <h1 class="title">Calculadora de Gorjetas</h1> <!--Titulo principal -->
+      </div>
+      <div>
+        <form class="tipsForm" id="tipsForm"> <!--Tag form -->
+            <label for="bill"> <!--Texto que acompanha o recebimento de dados -->
+                <p>Quanto ficou a conta?</p>
+            </label>
+            <p>
+                R$ <input type="number" placeholder="100" name="bill" id="bill" class="formImput" style="width: 40px;"> <!--Quadrado de digitacao do valor gasto-->
+            </p>
+            <label for="serviceQual"> <!--Texto que acompanha o recebimento de dados -->
+                <p>Como foi seu servico?</p>
+            </label>
+            <p>
+                <select name="serviceQual" id="serviceQual" class="formSelect" required> <!-- Opcao de selecionar valores ja pre-definidos -->
+                    <option disabled selected>--Escolha uma opcao--</option> <!--disabled select o texto que fica em cima da opcao selecionar -->
+                    <option value="0.3">30% - Maravilhoso</option>
+                    <option value="0.2">20% - Muito bom</option>
+                    <option value="0.15">15% - Bom</option>
+                    <option value="0.1">10% - Aceitavel</option>
+                    <option value="0.05">5% - Pessimo</option>
+                </select>
+            </p>
+            <label for="people"> 
+                <p>Quantas pessoas vao dividir a conta?</p>
+            </label>
+            <p>
+                <input type="number" placeholder="1" name="people" id="people" class="formImput" required> 
+            </p>
+            <button type="submit" class="formSubmit">Calcular</button>
+        </form>
+      </div>
+        <div id="totalTip">
+            Gorjeta total:
+            R$<span id="tip">0,00</span>
+            <span id="each">cada</span>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
