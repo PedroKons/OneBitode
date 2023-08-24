@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 240px;
+    margin-right: 240px;
+    
+}
+
+h1 {
+    font-family: Montserrat ;
+    text-align: left;
+    margin-left: 40px;
+  
+
+}
+
+.post-container {
+    background-color: #fffafa;
+    
+}
+
+.date {
+    font-family: Roboto;
+    text-align: left;
+    margin-left: 40px;
+    color: #008080;
+
+}
+
+.post-content {
+    text-align: left;
+    margin-left: 40px;
+    font-family:Open+Sans;
+}
