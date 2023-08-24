@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Average Calculator</title>
+</head>
+<body>
+        <div class="title">
+            <h1>Calculadora de Médias</h1>
+        </div>
+    <div id="container">
+        <div>
+            <form class="noteForm">
+                <label for="note">
+                    <h3>Digite suas notas!</h3>
+                </label>
+                <p>
+                    Nota 1 = <input type="number" placeholder="7.5" name="note1" id="note1" class="formImput" style="width: 43px;">
+                </p>
+                <p>
+                    Nota 2 = <input type="number" placeholder="7.5" name="note2" id="note2" class="formImput" style="width: 43px;"> 
+                </p>
+                <p>
+                    Nota 3 = <input type="number" placeholder="7.5" name="note3" id="note3" class="formImput" style="width: 43px;"> 
+                </p>
+                
+                <button type="submit" class="formSubmit">Calcular!</button>
+                
+            </form>
+        </div>
+        <div id="totalAverage">
+            Média Total:
+            <span id="meta">0.00</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
