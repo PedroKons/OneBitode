@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+    <main>
+        <form action="">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+
+            <p>Em qual moeda voce prefere recebre seu salario?</p>
+
+            <input type="radio" id="real" name="option">
+            <label for="real">Real</label><br>
+            <input type="radio" id="dolar" name="option">
+            <label for="dolar">Dolar</label><br>
+            <input type="radio" id="euro" name="option">
+            <label for="euro">Euro</label><br>
+            <input type="radio" id="yen" name="option">
+            <label for="yen">Yen</label><br>
+            
+            <p>Quais das afirmações seguintes você considera verdadeiras?</p>
+
+            <input type="checkbox" id="option1" name="check">
+            <label for="option1">O Boris Yeltsin é abstinente</label><br>
+            <input type="checkbox" id="option2" name="check">
+            <label for="option2">O Bill Clinton é casto. </label><br>
+            <input type="checkbox" id="option3" name="check">
+            <label for="option3">O Bill Gates é pobre</label><br>
+            <input type="checkbox" id="option4" name="check">
+            <label for="option4">A Fernanda Montenegro é péssima atriz.</label><br>
+            <input type="checkbox" id="option5" name="check">
+            <label for="option5">A Bibi Ferreira é uma beldade</label><br><br>
+
+            <label for="myfile">Coloque seu arquivo</label>
+            <input type="file" id="myfile"><br>
+
+            <p>Seus times favorios?</p>
+
+            <select id="team" name="team" size="4">
+                <option>Vasco</option>
+                <option>Palmeiras</option>
+                <option>Santos</option>
+                <option>Flamengo</option>
+                <option>Sao Paulo</option>
+            </select><br>
+
+            <p>Gostaria de fazer um comentario?</p>
+            <textarea name="obs" id="obs" cols="30" rows="10"></textarea><br><br>
+
+            <button type="submit">Mandar</button>
+            <button type="submit">Limpar</button>
+            
+        </form>
+    </main>
+</body>
+</html>
