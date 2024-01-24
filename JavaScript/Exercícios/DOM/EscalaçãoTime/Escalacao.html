@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação Time</title>
+    <script src="Escalação.js"></script>
+</head>
+<body>
+    <h1>Monte sua Escalação</h1>
+    <hr>
+    <form>
+        <h3>Informações do Jogador</h3>
+        <br>
+        <label for="position">Posição:</label>
+        <input type="text" id="position">
+        <label for="namePlayer">Nome:</label>
+        <input type="text" id="namePlayer" name="namePlayer">
+        <label for="numberPlayer">Número:</label>
+        <input type="number" id="numberPlayer">
+        <button type="button" onclick="climb()">Escalar!</button>
+        <br><br>
+        <h4>Remover um Jogador</h4>
+        <label for="numberPlayerRemove">Número:</label>
+        <input type="number" id="numberPlayerRemove">
+        <button type="button" onclick="removePlayer()">Remover!</button>
+        <br>
+
+        <section id="climb-list"><br></section>
+
+
+    </form>
+</body>
+</html>

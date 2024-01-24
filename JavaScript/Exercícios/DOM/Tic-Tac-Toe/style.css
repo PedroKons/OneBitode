@@ -1,0 +1,148 @@
+body {
+    text-align: center;
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/05/08/Abstract-Gradient-Background-Graphics-4067191-1-580x387.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+#ticTacToe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    margin: 5px;
+    font-size: 90px;
+    
+    
+}
+
+.player-name {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    margin: 0;
+    font-size: 60px;
+    color: #000;
+
+}
+
+#btnGo {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #aa2bff;
+    position: relative;
+    padding: 20px 40px;
+    margin: 20px auto;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #910091;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #910091;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #910091;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#btnGo:active {
+    top: 10px;
+    background-color: #f700a5;
+
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #910091;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #910091;
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #910091;
+}
+
+#btnGo:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    background-color: #2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.inputt, .inputt:focus, .inputt:valid {
+  padding:5px;
+  border-radius:15px;
+  background-color: transparent !important;
+  border-color: #000000; 
+}
+
+.inputt:focus {
+    border-color: rgb(217, 255, 0); /* Cor da borda ao focar */
+    box-shadow: 0 0 5px 2px rgb(217, 255, 0); /* Cor da sombra ao focar */
+    /* Outros estilos de foco, se necessário */
+}
+
+input::placeholder {
+  color: rgb(255, 0, 200);
+}
+
+
+.inputt:-webkit-autofill,
+.inputt:-webkit-autofill:hover,
+.inputt:-webkit-autofill:focus,
+.inputt:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s; /* Adicionando transição para evitar a mudança instantânea */
+    background-color: transparent !important; /* Forçando o fundo a ser transparente */
+    }
+
+.img-Red,
+.img-Blue {
+    width: 50px; /* Adicione a largura desejada */
+    height: auto; /* Adicione a altura desejada */
+}
+
+.img-All {
+    display: flex;
+    justify-content: space-between; /* Adicionado para espaçar as imagens nos cantos */
+    position:fixed; /* Adicionado para manter as imagens fixas na tela */
+    bottom: 30px; /* Adicionado para posicionar as imagens na parte inferior */
+    left: 70px; /* Adicionado para posicionar as imagens à esquerda */
+    right: 100px; /* Adicionado para posicionar as imagens à direita */
+}
+
+.cell-x {
+    color: red;
+    
+}
+
+.cell-o {
+    color: blue;
+    
+}
+
+.cell-filled {
+    border: 2px solid black;
+}
+

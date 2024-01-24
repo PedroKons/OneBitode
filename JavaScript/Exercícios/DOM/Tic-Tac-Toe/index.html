@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <header>
+        <h2>JOGO DA VELHA</h2>
+    </header>
+    <form id="container">
+        <input type="text" class="inputt" id="playerOneInput" name="playerOne" placeholder="PLAYER 1 - X" autocomplete="off" >
+        <input type="text" class="inputt" id="playerTwoInput" name="playerTwo" placeholder="PLAYER 2 - O" autocomplete="off" ><br>
+
+        <button id="btnGo">INICIAR</button>
+        <div class="img-All">
+            <div class="img-Red">
+                <img src="imagens/verm.png" id="img-Red" style="display: none;">
+            </div>
+            <div class="img-Blue">
+                <img src="imagens/azul.png" id="img-Blue" style="display: none;">
+            </div>
+        </div>
+        <div id="ticTacToe"></div><br>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
