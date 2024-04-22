@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template: auto 1fr auto / 1fr 3fr;
+  grid-template-areas:
+    "cabecalho cabecalho cabecalho"
+    "title title title"
+    "principal principal menu-lateral"
+    "rodape rodape rodape";
+  gap: 2rem 4rem;
+  
+}
+
+.cabecalho {
+  grid-area: cabecalho;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: 35px;
+}
+
+.cabecalho nav a{
+    font-size: 18px;
+    color: white;
+    transition: .3s;
+}
+
+.cabecalho nav a:hover {
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.603) ;
+    transform: scale(1.2);
+}
+
+.cabecalho img {
+    width: 250px;
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    text-transform: uppercase;
+    color: black;
+}
+
+.title h4 {
+    font-size: 17px;
+    color: rgb(110, 106, 106);
+}
+
+.menu-lateral {
+  grid-area: menu-lateral;
+  background-color: rgba(0, 0, 0, 0.753);
+  display: flex;
+  flex-direction: column;
+  padding: 41px;
+}
+
+.menu-lateral h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.menu-lateral .esportes img {
+    margin-top: 20px;
+    width: 220px;
+    border-radius: 15px;
+}
+
+.menu-lateral .esportes h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.menu-lateral .esportes:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.principal {
+  grid-area: principal;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 400px);
+}
+
+.esportesPrincipal {
+    padding: 30px;
+}
+
+.principal .esportesPrincipal img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.principal .esportesPrincipal h4 {
+    text-transform: uppercase;
+}
+
+.rodape {
+  grid-area: rodape;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+.rodape img {
+    width: 100px;
+}
+
+.rodape a {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.rodape a:hover {
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.603) ;
+    transform: scale(1.2);
+}
+
+.item {
+  text-align: center;
+  font-weight: normal;
+  gap: 10px;
+  padding: 20px;
+}
+
+.iten:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.iten {
+  text-align: justify;
+  font-weight: normal;
+  transition: .2s;
+}
+
