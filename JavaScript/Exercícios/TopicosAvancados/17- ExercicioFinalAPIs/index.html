@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimo Exercício de JS</title>
+</head>
+<body>
+  <main style="display: flex; gap: 4rem; margin: 1rem 2rem;">
+    <form action="http://localhost:3000/accounts" method="post">
+      <h2>Faça Uma Transação</h2>
+      <label for="name">Nome:</label>
+      <br>
+      <input type="text" id="name" name="name">
+      <br><br>
+      <label for="accountValue">Valor(R$):</label>
+      <br>
+      <input type="number" id="accountValue" name="accountValue">
+      <br>
+      <br>
+      <button>Enviar</button>
+    </form>
+    <div class="soldTotal">Saldo total: <span id="sold"></span></div>
+    <div>
+      <h2>Extrato</h2>
+      <section id="accounts"></section>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
